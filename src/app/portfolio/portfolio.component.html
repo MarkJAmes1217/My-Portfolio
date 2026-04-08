@@ -1,0 +1,48 @@
+ <div class="container">
+    <header class="header">
+      <h1>Mark James Brian Dela Cruz</h1>
+      <p>Full-Stack Developer | Angular • React • NestJS • Laravel • .Net Core</p>
+    </header>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        Software developer with experience building scalable web applications using modern frameworks.
+        Passionate about clean architecture, APIs, and performance optimization.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        @for (skill of skills; track skill) {
+          <span>{{ skill }}</span>
+        }
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        @for (project of projects; track project) {
+          <div class="card">
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.description }}</p>
+
+            <div class="tags">
+              @for (tag of project.tech; track tag) {
+                <span>{{ tag }}</span>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+
+    <section class="section contact">
+      <h2>Contact</h2>
+      <p>Email: markjames1217@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/mark-james-brian-dela-cruz-190889135/</p>
+      <p>GitHub: github.com/MarkJAmes1217</p>
+    </section>
+  </div>
