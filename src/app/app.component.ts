@@ -11,7 +11,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <nav>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
+        <!-- <a href="#experience">Experience</a> -->
       </nav>
     </header>
 
